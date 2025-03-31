@@ -53,3 +53,10 @@ CodeQL comes with a set of built-in queries but developers can extend them with 
 ## For You To Do
 
 Fork this repository. Run CodeQL on the source code. On analyzing the generated report, you will find NoSQL injection vulnerabilties in your code. Fix the vulnerabilties and push to a new branch.
+
+
+
+terminal commands:
+
+1. create the db `~/codeql/codeql database create testDB --language=javascript-typescript --overwrite`
+2. create the sarif report `~/codeql/codeql database analyze testDB --format="sarif-latest" --output ~/Documents/sweng/learn-security-analysis/outputTest/report.sarif`
